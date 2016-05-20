@@ -1,0 +1,24 @@
+{
+  "name": "rwd-example",
+  "version": "1.0.0",
+  "description": "Responsive web design example",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimPerry/rwd-example.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/TimPerry/rwd-example/issues"
+  },
+  "homepage": "https://github.com/TimPerry/rwd-example#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.0.0",
+    "gulp-sass": "^2.3.1"
+  }
+}

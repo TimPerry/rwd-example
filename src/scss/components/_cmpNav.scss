@@ -1,0 +1,12 @@
+.cmpNav {
+    &:before {
+	display: block;
+	content: 'Menu';
+    }    
+    &__list {
+	display: none;
+    }
+    &:focus &__list {
+	display: block;
+    }
+}

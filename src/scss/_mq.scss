@@ -68,7 +68,7 @@ $mq-static-breakpoint: desktop !default;
 $mq-show-breakpoints: () !default;
 
 /// Customize the media type (e.g. `@media screen` or `@media print`)
-/// By default sass-mq uses an "all" media type (`@media all and É`)
+/// By default sass-mq uses an "all" media type (`@media all`)
 ///
 /// @type String
 /// @link https://github.com/sass-mq/sass-mq#changing-media-type Full documentation and examples

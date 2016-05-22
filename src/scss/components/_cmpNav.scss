@@ -1,18 +1,17 @@
 .cmpNav {
     text-align: center;
-    &::before {
+    &__menuButton {
 	background-color: #ebebeb;
 	padding: $base-spacing-unit/4;
 	display: inline-block;
 	content: 'Menu';
 	border: 1px solid #5d5d5d;
+	    cursor: pointer;
     }    
     &__list {
 	display: none;
-	list-style: none;
-	padding: 0;
     }
-    &:focus &__list {
+    &__menuButton:focus ~ &__list {
 	display: block;
     }
 }

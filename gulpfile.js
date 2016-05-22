@@ -25,7 +25,8 @@ gulp.task('watch', ['scss', 'html'], function () {
 gulp.task('connect', function() {
     connect.server({
 	root: 'dist',
-	livereload: true
+	livereload: true,
+	host: '0.0.0.0'
     });
 });
 

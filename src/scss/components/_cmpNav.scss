@@ -1,10 +1,16 @@
 .cmpNav {
-    &:before {
-	display: block;
+    text-align: center;
+    &::before {
+	background-color: #ebebeb;
+	padding: $base-spacing-unit/4;
+	display: inline-block;
 	content: 'Menu';
+	border: 1px solid #5d5d5d;
     }    
     &__list {
 	display: none;
+	list-style: none;
+	padding: 0;
     }
     &:focus &__list {
 	display: block;

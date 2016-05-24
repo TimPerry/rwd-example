@@ -17,9 +17,16 @@ gulp.task('html', function () {
 	.pipe(connect.reload());
 });
 
-gulp.task('watch', ['scss', 'html'], function () {
+gulp.task('img', function () {
+    gulp.src('./src/img/*.svg', { base: 'src' })
+	.pipe(gulp.dest('dist'))
+	.pipe(connect.reload());
+});
+
+gulp.task('watch', ['img', 'scss', 'html'], function () {
     gulp.watch(['./src/index.html'], ['html']);
     gulp.watch('./src/scss/**/*.scss', ['scss']);
+    gulp.watch('./src/img/*.svg', ['img']);
 });
 
 gulp.task('connect', function() {

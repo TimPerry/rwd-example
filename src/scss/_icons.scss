@@ -1,0 +1,12 @@
+$icons: ("facebook", "twitter", "google");
+
+.i {
+    display: inline-block;
+    background-size: 100% 100%;
+}
+
+@each $icon in $icons {
+    .i--#{$icon} {
+	background-image: url(img/#{$icon}.svg);
+    }
+}

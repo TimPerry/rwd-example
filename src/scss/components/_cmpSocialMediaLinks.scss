@@ -1,0 +1,10 @@
+.cmpSocialMediaLinks {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    &__icon {
+	display: table-cell;
+	height: 40px;
+	width: 40px;
+    }
+}

@@ -2,14 +2,20 @@
     text-align: center;
     &__menuButton {
 	background-color: #ebebeb;
-	padding: $base-spacing-unit/4;
-	display: inline-block;
-	content: 'Menu';
+	padding: $base-spacing-unit/2;
+	display: block;
 	border: 1px solid #5d5d5d;
-	    cursor: pointer;
+	cursor: pointer;
+	margin-bottom: $base-spacing-unit/2;
+	font-weight: bold;
+	font-size: 1.2em;
     }    
     &__list {
 	display: none;
+    }
+    &__link {
+	font-size: 1.1em;
+	margin-bottom: 0.8em;
     }
     &__menuButton:focus ~ &__list {
 	display: block;

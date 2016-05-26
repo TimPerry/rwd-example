@@ -8,6 +8,7 @@
 	margin-bottom: $base-spacing-unit/2;
 	font-weight: bold;
 	font-size: 1.2em;
+	text-decoration: none;
 	@include mq($from: desktop) {
 	    display: none;
 	}

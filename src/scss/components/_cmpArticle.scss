@@ -1,11 +1,18 @@
 .cmpArticle {
     display: flex;
     flex-direction: column;
+    @include mq($from: desktop) {
+	display: block;
+    }
     &__image {
 	width: 100%;
 	height: auto;
     }
     &__side {
 	order: 1;
+	@include mq($from: desktop) {
+	    order: initial;
+	    float: right;
+	}
     }
 }

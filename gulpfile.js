@@ -2,11 +2,17 @@
 
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    connect = require('gulp-connect');
+    connect = require('gulp-connect'),
+    postcss = require('gulp-postcss'),
+    sourcemaps = require('gulp-sourcemaps'),
+    autoprefixer = require('autoprefixer');
 
 gulp.task('scss', function () {
     return gulp.src('./src/scss/**/*.scss')
+        .pipe(sourcemaps.init())
 	.pipe(sass().on('error', sass.logError))
+        .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
+        .pipe(sourcemaps.write('.'))
 	.pipe(gulp.dest('./dist'))
         .pipe(connect.reload());
 });

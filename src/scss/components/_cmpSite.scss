@@ -1,5 +1,15 @@
 .cmpSite {
+    position: relative;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     padding: 2em;
+    &__socialLinks {
+	width: 100%;
+	@include mq($from: desktop) {
+	    position: absolute;
+	    top: 3em;
+	    right: 2em;
+	    width: 200px;
+	}
+    }
 }

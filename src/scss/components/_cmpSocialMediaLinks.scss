@@ -1,8 +1,7 @@
 .cmpSocialMediaLinks {
-    display: table;
-    table-layout: fixed;
+    display: flex;
+    justify-content: space-around;
     &__icon {
-	display: table-cell;
 	height: 40px;
 	width: 40px;
     }

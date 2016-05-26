@@ -28,23 +28,35 @@
     </header>
     
     <main class="cmpSite__main cmpMain">
-      <article class="cmpArticle">
-	<h2 class="cmpArticle__title">Lorem Ipsum Dolor Sit</h2>
-	<p class="cmpArticle__date">posted on <time datetime="2015-05-15">15th May 2015</time> by <a href="#">Author</a></p>
-	<figure>
-	  <img alt="Some image" src="img/placeholder.svg" class="cmpArticle__image"/>
-	</figure>
-	<aside class="cmpArticle__side">
-	  <strong>More&hellip;</strong>
-	  <ul>
-	    <li><a href="#">Link #1</a></li>
-	    <li><a href="#">Another link</a></li>
-	    <li><a href="#">Third link</a></li>
-	  </ul>
-	</aside>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc laoreet massa viverra hendrerit ullamcorper. Donec dapibus velit ac orci consectetur, quis efficitur odio lobortis. Sed magna lectus, venenatis eu viverra ut, lobortis in turpis. Maecenas quis lectus quis magna suscipit lobortis sed nec orci. Proin malesuada molestie dolor in fermentum.</p>
-	<p>Duis nec gravida massa, et varius est. Praesent maximus orci vel ex vehicula euismod eu id ipsum. Proin placerat eget urna ac tempus. Aenean vel ante nec leo commodo congue. Mauris ligula mauris, pharetra ut mattis a, placerat sit amet tortor. Nulla semper tincidunt tellus, dapibus auctor dui consequat vel. Nullam tincidunt felis enim, in auctor mauris imperdiet et. Maecenas interdum urna eget venenatis consectetur. Morbi tellus neque, eleifend sit amet nunc vitae, vulputate consectetur lectus.</p>
-      </article>
+      <section class="cmpMain__articles">
+	<article class="cmpArticle">
+	  <h2 class="cmpArticle__title">Lorem Ipsum Dolor Sit</h2>
+	  <p class="cmpArticle__date">posted on <time datetime="2015-05-15">15th May 2015</time> by <a href="#">Author</a></p>
+	  <figure class="cmpArticle__figure">
+	    <img alt="Some image" src="img/placeholder.svg" class="cmpArticle__image"/>
+	  </figure>
+	  <aside class="cmpArticle__side">
+	    <strong>More&hellip;</strong>
+	    <ul>
+	      <li><a href="#">Link #1</a></li>
+	      <li><a href="#">Another link</a></li>
+	      <li><a href="#">Third link</a></li>
+	    </ul>
+	  </aside>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc laoreet massa viverra hendrerit ullamcorper. Donec dapibus velit ac orci consectetur, quis efficitur odio lobortis. Sed magna lectus, venenatis eu viverra ut, lobortis in turpis. Maecenas quis lectus quis magna suscipit lobortis sed nec orci. Proin malesuada molestie dolor in fermentum.</p>
+	  <p>Duis nec gravida massa, et varius est. Praesent maximus orci vel ex vehicula euismod eu id ipsum. Proin placerat eget urna ac tempus. Aenean vel ante nec leo commodo congue. Mauris ligula mauris, pharetra ut mattis a, placerat sit amet tortor. Nulla semper tincidunt tellus, dapibus auctor dui consequat vel. Nullam tincidunt felis enim, in auctor mauris imperdiet et. Maecenas interdum urna eget venenatis consectetur. Morbi tellus neque, eleifend sit amet nunc vitae, vulputate consectetur lectus.</p>
+	</article>
+      </section>
+      <aside class="cmpMain__side">
+	<article class="cmpTitledImage">
+	  <h3 class="cmpTitledImage__title">A guide to snoopsetting</h3>
+	  <img alt="some image" src="img/placeholder.svg" class="cmpTitledImage__image"/>
+	</article>
+	<article class="cmpTitledImage">
+	  <h3 class="cmpTitledImage__title">Welcome to the Surveillanc State</h3>
+	  <img alt="some image" src="img/placeholder.svg" class="cmpTitledImage__image"/>
+	</article>
+      </aside>
     </main>
     
     <footer class="cmpSite__footer cmpFooter">
